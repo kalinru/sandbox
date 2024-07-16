@@ -26,4 +26,5 @@ function changeBackgroundColor() {
   body.style.backgroundColor = color;
 }
 const btn = document.querySelector("#btn");
-console.log(btn);
+
+btn.onclick = changeBackgroundColor;
