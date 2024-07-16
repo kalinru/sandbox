@@ -32,3 +32,14 @@ function hasPassingGrade(score) {
 console.log(hasPassingGrade(100));
 console.log(hasPassingGrade(53));
 console.log(hasPassingGrade(87));
+
+function studentMsg(totalScores, studentScore) {
+  const average = getAverage(totalScores);
+  const grade = getGrade(studentScore);
+  const passed = hasPassingGrade(studentScore);
+
+  return `Class average: ${average}. Your grade: ${grade}. You ${
+    passed ? "passed" : "failed"
+  } the course.`;
+}
+console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
