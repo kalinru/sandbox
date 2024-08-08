@@ -17,7 +17,6 @@ const sprite = document.getElementById("sprite-container");
 const apiUrl = "https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/";
 
 searchButton.addEventListener("click", async () => {
-  // searchInput.value = 'pikachu'
   const search = searchInput.value;
   const pokemon = await searchPokemon(search);
   renderPokemon(pokemon);
@@ -34,7 +33,6 @@ const searchPokemon = async (search) => {
 };
 
 const renderPokemon = (pokemon) => {
-  console.log(pokemon);
   pokemonName.textContent = pokemon.name.toUpperCase();
   pokemonId.textContent = "#" + pokemon.id;
   weight.textContent = "Weight: " + pokemon.weight;
