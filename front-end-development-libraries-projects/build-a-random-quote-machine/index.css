@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.5s;
+}
+
+#quote-box {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 50px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+#text {
+  text-align: center;
+  width: 450px;
+  height: auto;
+  clear: both;
+  font-weight: 500;
+  font-size: 1.75em;
+
+  transition: color 0.5s;
+}
+
+#text i {
+  font-size: 1em;
+  margin-right: 0.4em;
+}
+
+#author {
+  text-align: right;
+  margin-top: 20px;
+
+  transition: color 0.5s;
+}
+
+#new-quote {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+#tweet-quote {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  border-radius: 4px;
+}
+
+.bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
