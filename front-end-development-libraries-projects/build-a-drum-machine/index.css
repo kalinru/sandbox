@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+
+  transition: background-color 0.5s;
+}
+
+#drum-machine {
+  display: flex;
+  padding: 2em;
+  border: 4px solid blue;
+  background-color: #eff;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.drum-pads {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.drum-pad {
+  font-size: 2em;
+  width: 100px;
+  height: 100px;
+}
+
+.drum-pad__active {
+  background-color: #aaf;
+}
+
+.panel {
+  padding: 4em 0;
+  margin-left: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#power {
+  margin-left: 1em;
+}
+
+#bank {
+  margin-left: 1em;
+}
+
+#display {
+  padding: 1em;
+  background-color: #aaf;
+  border-radius: 4px;
+  width: 200px;
+  text-align: center;
+}
+
+#volume {
+  width: 200px;
+}
