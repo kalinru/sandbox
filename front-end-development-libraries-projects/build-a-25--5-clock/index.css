@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+}
+
+.pomidoro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2em;
+  gap: 1em;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 1em;
+  background-color: #aaa;
+}
+
+.breakSessionControls {
+  display: flex;
+  gap: 2em;
+}
+
+.breakControls,
+.sessionControls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#session-label {
+}
+
+.controls {
+  display: flex;
+  gap: 1em;
+  font-weight: bold;
+  align-items: center;
+}
+
+#break-decrement,
+#break-increment,
+#session-decrement,
+#session-increment {
+  font-weight: bold;
+  font-size: 1em;
+  width: 45px;
+  height: 45px;
+}
+
+.timeLeftDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+.timeLeftDisplay_lastMinute {
+  color: red;
+}
+
+#time-left {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.startStopResetControls {
+  display: flex;
+  gap: 1em;
+}
+
+#start_stop,
+#reset {
+  font-weight: bold;
+  font-size: 1em;
+  height: 45px;
+}
